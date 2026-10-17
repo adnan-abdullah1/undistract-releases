@@ -12,6 +12,13 @@ This repository only hosts release downloads. Get the latest APK from **[Release
    - **See which app is open** (Accessibility): Settings → Accessibility → Installed apps → Undistract → On. If Android says it's a **restricted setting**, go to Settings → Apps → Undistract → ⋮ → **Allow restricted settings**, then try again. Leave Undistract's "shortcut" switch off.
    - **See screen time** (Usage access), needed for daily limits.
 
+### "App blocked to protect your device"
+
+In some countries (including India), Google Play Protect blocks installing any app from a browser, messaging app or file manager if it uses Accessibility, which Undistract needs to see which app is open. It's a blanket rule for that permission, not a finding about this app. Until Undistract is on the Play Store, the ways around it are:
+
+- **Install from a computer over USB** with `adb install undistract-<version>.apk` (needs USB debugging on). This isn't affected.
+- Or temporarily turn off Play Protect scanning (Play Store → profile → Play Protect → ⚙ → Scan apps with Play Protect), install, then turn it back on. Only do this if you trust the download (check the SHA-256 below).
+
 ### Automatic updates (optional)
 
 Install [Obtainium](https://github.com/ImranR98/Obtainium) and add this repository's URL. It will notify you about new releases.
